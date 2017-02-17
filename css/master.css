@@ -1,7 +1,6 @@
 @charset "UTF-8";
 .label,sub,sup{vertical-align:baseline}
 hr,img{border:0}
-body,figure{margin:0}
 .btn-group>.btn-group,.btn-toolbar .btn,.btn-toolbar .btn-group,.btn-toolbar .input-group,.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.dropdown-menu{float:left}
 .img-responsive,.img-thumbnail,.table,label{max-width:100%}
 .navbar-fixed-bottom .navbar-collapse,.navbar-fixed-top .navbar-collapse,.pre-scrollable{max-height:340px}
@@ -322,6 +321,7 @@ button,input,select,textarea{font-family:inherit;font-size:inherit;line-height:i
 a{color:#337ab7;text-decoration:none}
 a:focus,a:hover{color:#23527c;text-decoration:underline}
 a:focus{outline:-webkit-focus-ring-color auto 5px;outline-offset:-2px}
+figure{margin:0}
 .img-responsive{display:block;height:auto}
 .img-rounded{border-radius:6px}
 .img-thumbnail{padding:4px;line-height:1.42857;border:1px solid #ddd;border-radius:4px;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;height:auto}
@@ -1376,6 +1376,7 @@ button.close{padding:0;cursor:pointer;background:0 0;border:0;-webkit-appearance
 .carousel-caption{left:20%;right:20%;padding-bottom:30px}
 .carousel-indicators{bottom:20px}
 }
+#map,body,html{height:100%}
 .clearfix:after,.clearfix:before{content:" ";display:table}
 .center-block{display:block;margin-left:auto;margin-right:auto}
 .pull-right{float:right!important}
@@ -1442,3 +1443,4 @@ td.visible-print,th.visible-print{display:table-cell!important}
 @media print{.visible-print-inline-block{display:inline-block!important}
 .hidden-print{display:none!important}
 }
+body,html{margin:0;padding:0}
