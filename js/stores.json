@@ -1,0 +1,158 @@
+{
+	"regions": [
+	{
+		"name": "Northland",
+		"value": [
+		{
+			"name": "Soundlounge",
+			"address": "75 Kerikeri Rd, Kerikeri 0230",
+			"lat": -35.227566,
+			"lng": 173.9490258,
+			"phone": "(09) 407 7101",
+			"website": ""
+		},
+		{
+			"name": "The Noise Company",
+			"address": "106A Victoria St, Dargaville 0310",
+			"lat": -35.9407711,
+			"lng": 173.8000441,
+			"phone": "(09) 439 6786",
+			"website": ""
+		},
+		{
+			"name": "The Noise Company",
+			"address": "106A Victoria St, Dargaville 0310",
+			"lat": -35.9407711,
+			"lng": 173.8000441,
+			"phone": "(09) 439 6786",
+			"website": ""
+		}
+		]
+	},
+	{
+		"name": "Auckland",
+		"value": [
+		{
+			"name": "Rummage Retro and Collectables",
+			"address": "523 Matakana Rd, Laly Haddon Place, Warkworth 0985",
+			"lat": -36.3691205,
+			"lng": 174.6825015,
+			"phone": "(021) 442 071",
+			"website": ""
+		},
+		{
+			"name": "Southbound Records",
+			"address": "132 Symonds Street, Eden Terrace, Auckland 1010",
+			"lat": -36.8616556,
+			"lng": 174.7620281,
+			"phone": "(09) 302 0769",
+			"website": "http://www.southbound.co.nz"
+		},
+		{
+			"name": "Alien Records & CDs",
+			"address": "9 Veronica St, New Lynn, Auckland 0600",
+			"lat": -36.9075758,
+			"lng": 174.688216,
+			"phone": "(09) 827 7100",
+			"website": "https://sites.google.com/a/alienrecordscds.com/alienrecordscds-com/"
+		},
+		{
+			"name": "Audio Foundation",
+			"address": "4 Poynton Terrace, Auckland, 1010",
+			"lat": -36.8567036,
+			"lng": 174.7597868,
+			"phone": "(09) 373 5790",
+			"website": "http://audiofoundation.org.nz"
+		},
+		{
+			"name": "Rebel Soul Records",
+			"address": "Samoa House Arcade, 283 Karangahape Rd, Auckland",
+			"lat": -36.8574276,
+			"lng": 174.7558111,
+			"phone": "(09) 303 2744",
+			"website": ""
+		},
+		{
+			"name": "Conch Kitchen & Bar",
+			"address": "115A Ponsonby Rd, Ponsonby, Auckland 1011",
+			"lat": -36.8557852,
+			"lng": 174.7445589,
+			"phone": "(09) 360 1999",
+			"website": "http://conch.co.nz"
+		},
+		{
+			"name": "Real Groovy",
+			"address": "369 Queen St, Auckland, 1010",
+			"lat": -36.8550313,
+			"lng": 174.7600744,
+			"phone": "(09) 302 3940",
+			"website": "http://realgroovy.co.nz"
+		},
+		{
+			"name": "Marbecks",
+			"address": "34 Queen St, Auckland, 1010",
+			"lat": -36.8450811,
+			"lng": 174.7644796,
+			"phone": "(09) 379 0444",
+			"website": "http://marbecksclassical.co.nz"
+		},
+		{
+			"name": "Rec Records",
+			"address": "38 Customs St E, Auckland, 1010",
+			"lat": -36.8452914,
+			"lng": 174.7670129,
+			"phone": "",
+			"website": "http://www.rec-akl.nz/"
+		},
+		{
+			"name": "Flying Out Record Store",
+			"address": "80 Pitt Street, Auckland 1010",
+			"lat": -36.8452914,
+			"lng": 174.7670129,
+			"phone": "(09) 366 1755",
+			"website": "http:/flyingout.co.nz/"
+		},
+		{
+			"name": "Flying Out Record Store",
+			"address": "80 Pitt Street, Auckland 1010",
+			"lat": -36.8572167,
+			"lng": 174.75697,
+			"phone": "(09) 366 1755",
+			"website": "http:/flyingout.co.nz/"
+		},
+		{
+			"name": "Lake Rd Barbers",
+			"address": "450 Lake Rd, Takapuna, Takapuna Beach 0622",
+			"lat": -36.7899088,
+			"lng": 174.7729777,
+			"phone": "(09) 486 2260",
+			"website": ""
+		},
+		{
+			"name": "JPI Music",
+			"address": "99 Parrs Cross Rd, Oratia",
+			"lat": -36.9040117,
+			"lng": 174.620593,
+			"phone": "(09) 837 2656",
+			"website": "http://justplaneinteresting.co.nz"
+		},
+		{
+			"name": "Musiquarium",
+			"address": "369 Dominion Rd, Mt Eden, Auckland",
+			"lat": -36.8800147,
+			"lng": 174.7475227,
+			"phone": "(09) 630 9066",
+			"website": "http://justplaneinteresting.co.nz"
+		},
+		{
+			"name": "Mix Foundation",
+			"address": "55-57 High St, Auckland, 1010",
+			"lat": -36.8490682,
+			"lng": 174.7638676,
+			"phone": "(09) 303 4757",
+			"website": "http://mixfoundation.co.nz"
+		}
+		]
+	}
+	]
+}
