@@ -297,6 +297,99 @@
 			"lng": 174.7732089,
 			"phone": "(04) 803 3726",
 			"website": "https://www.roughpeel.co.nz"
+		},
+		{
+			"name": "Death Ray Records",
+			"address": "6 Wilson St, Newtown, Wellington 6021",
+			"lat": -41.3125987,
+			"lng": 174.7804781,
+			"phone": "(04) 389 8014",
+			"website": "https://www.deathrayrecords.com/"
+		},
+		{
+			"name": "Lo-Cost Records",
+			"address": "147 Jackson St, Petone",
+			"lat": -41.2247111,
+			"lng": 174.8748301,
+			"phone": "(04) 939 2609",
+			"website": "https://www.moonhop.com/"
+		},
+		{
+			"name": "Wonderland Records",
+			"address": "2 Moore's Valley Road, Wainuiomata, 6008",
+			"lat": -41.272447,
+			"lng": 174.9520493,
+			"phone": "(04) 939 7581",
+			"website": "http://wonderland_recs.tripod.com/"
+		},
+		{
+			"name": "Mint Music",
+			"address": "258 High St, Lower Hutt 5010",
+			"lat": -41.2083229,
+			"lng": 174.903125,
+			"phone": "(04) 566 2580",
+			"website": "http://mintmusic.co.nz"
+		},
+		{
+			"name": "Bizzare Attractions",
+			"address": "142 High Street N, Carterton, Wairarapa",
+			"lat": -41.0230198,
+			"lng": 175.5273905,
+			"phone": "",
+			"website": "http://www.myantiqueshops.co.nz/bizzare_attractions.html"
+		}
+		]
+	},
+	{
+		"name": "South Island",
+		"value": [
+		{
+			"name": "At Last Records",
+			"address": "82 Stafford St, Timaru 7910",
+			"lat": -44.3989108,
+			"lng": 171.2534356,
+			"phone": "(03) 688 3341",
+			"website": "https://www.atlastrecordstimaru.co.nz/"
+		},
+		{
+			"name": "West Coast Vinyl & Fashion",
+			"address": "21 Revell St, Hokitika 7810",
+			"lat": -42.7188708,
+			"lng": 170.9571233,
+			"phone": "027 907 9069",
+			"website": "https://www.facebook.com/West-Coast-Vinyl-Fashion-769741239826272/"
+		},
+		{
+			"name": "Galaxy Records",
+			"address": "336 St Asaph St, Christchurch Central, Christchurch 8011",
+			"lat": -43.5364672,
+			"lng": 172.6457805,
+			"phone": "(03) 379 8852",
+			"website": "http://www.galaxyrecords.co.nz"
+		},
+		{
+			"name": "Spooky Boogie",
+			"address": "54 London St, Lyttelton 8082",
+			"lat": -43.6020894,
+			"lng": 172.7176149,
+			"phone": "027 242 2854",
+			"website": "https://www.facebook.com/spookyookyooky/"
+		},
+		{
+			"name": "Penny Lane Records",
+			"address": "430 Colombo St, Sydenham, Christchurch 8023",
+			"lat": -43.5436942,
+			"lng": 172.6345367,
+			"phone": "(03) 366 3278",
+			"website": "http://www.pennylanerecords.co.nz"
+		},
+		{
+			"name": "Sashana Surf",
+			"address": "The Tannery, 35 Tanner St Christchurch",
+			"lat": -43.5578628,
+			"lng": 172.6775798,
+			"phone": "(03) 389 5611",
+			"website": "http://www.sadhanasurfboards.co.nz"
 		}
 		]
 	}
