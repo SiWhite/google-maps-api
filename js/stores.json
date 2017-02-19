@@ -153,6 +153,152 @@
 			"website": "http://mixfoundation.co.nz"
 		}
 		]
+	},
+	{
+		"name": "Central North Island",
+		"value": [
+		{
+			"name": "Waikato Second Hand Centre",
+			"address": "441 Anglesea St, Hamilton 3204",
+			"lat": -37.7842071,
+			"lng": 175.2744425,
+			"phone": "(07) 839 3570",
+			"website": "http://waikatosecondhand.co.nz"
+		},
+		{
+			"name": "Needle in the Hay",
+			"address": "300a Racquet Lane",
+			"lat": -37.784871,
+			"lng": 175.2768741,
+			"phone": "(07) 839 3570",
+			"website": ""
+		},
+		{
+			"name": "The Refinery",
+			"address": "5 Willoughby St, Paeroa 3600",
+			"lat": -37.3792703,
+			"lng": 175.668136,
+			"phone": "(07) 862 7678",
+			"website": "http://www.the-refinery.co.nz"
+		},
+		{
+			"name": "Second Thoughts Collectables",
+			"address": "136 Whitaker St, Te Aroha, 3320",
+			"lat": -37.5437593,
+			"lng": 175.7106919,
+			"phone": "(07) 884 4261",
+			"website": "https://www.facebook.com/secondthoughtscollectables/"
+		},
+		{
+			"name": "Tracs Records",
+			"address": "39 Devonport Rd, Tauranga, 3110",
+			"lat": -37.6854837,
+			"lng": 176.167206,
+			"phone": "(07) 571 0466",
+			"website": "https://www.facebook.com/secondthoughtscollectables/"
+		},
+		{
+			"name": "Old Grumpy's Gallery",
+			"address": "276 Maunganui Rd, Mount Maunganui, Tauranga 3116",
+			"lat": -37.6418447,
+			"lng": 176.1829331,
+			"phone": "(07) 571 0466",
+			"website": "http://oldgrumpys.co.nz"
+		},
+		{
+			"name": "Vinyl Destination",
+			"address": "52 Devonport Rd, Tauranga, 3110",
+			"lat": -37.6852893,
+			"lng": 176.1676072,
+			"phone": "(021) 213 5755",
+			"website": ""
+		},
+		{
+			"name": "Mt Bookworm",
+			"address": "330 Maunganui Rd, Mount Maunganui, Tauranga 3116",
+			"lat": -37.6431291,
+			"lng": 176.1844239,
+			"phone": "(07) 572 1346",
+			"website": "http://www.mtbookworm.co.nz/"
+		},
+		{
+			"name": "My Music Taupo",
+			"address": "79 Tongariro St, Taupo 3377",
+			"lat": -38.6869705,
+			"lng": 176.067593,
+			"phone": "(07) 378 2844",
+			"website": "https://www.facebook.com/mymusictaupo1"
+		},
+		{
+			"name": "Vinyl Countdown",
+			"address": "109 Devon St W, New Plymouth 4310",
+			"lat": -39.0588171,
+			"lng": 174.0688259,
+			"phone": "(06) 758 0064",
+			"website": "https://www.vinylcountdown.co.nz/"
+		},
+		{
+			"name": "Chadz Antiques",
+			"address": "50 Liardet St, New Plymouth 4310",
+			"lat": -39.0575787,
+			"lng": 174.0739385,
+			"phone": "(06) 758 4966",
+			"website": "https://myantiqueshops.co.nz"
+		},
+		{
+			"name": "Hi Fi Gallery / Just for the Record",
+			"address": "183 Dickens St, Napier South, Napier 4110",
+			"lat": -39.4915215,
+			"lng": 176.9148901,
+			"phone": "(06) 835 2234",
+			"website": "https://hifigallery.co.nz"
+		},
+		{
+			"name": "Electric City Music & Video Services",
+			"address": "61 Dalton St, Napier 4140",
+			"lat": -39.4910241,
+			"lng": 176.913676,
+			"phone": "(06) 835 5358",
+			"website": "https://ecmvideo.co.nz"
+		},
+		{
+			"name": "Passionate about Vinyl",
+			"address": "Main Street, Waipukurau 4200, Hawke's Bay",
+			"lat": -39.9435499,
+			"lng": 176.585332,
+			"phone": "",
+			"website": ""
+		},
+		{
+			"name": "Music Box Record Exchange",
+			"address": "346 Heretaunga St W, St Leonards, Hastings 4122",
+			"lat": -39.6393299,
+			"lng": 176.8381541,
+			"phone": "(06) 878 2479",
+			"website": ""
+		}
+		]
+	},
+	{
+		"name": "Wellington/Wairarapa",
+		"value": [
+		{
+			"name": "Goldie's Junk 'n Disorderly",
+			"address": "16 Main St, Foxton, New Zealand 4814",
+			"lat": -40.4720978,
+			"lng": 175.2792355,
+			"phone": "(06) 363 6950",
+			"website": "https://www.facebook.com/Goldies-Junk-n-Disorderly-172250802837727"
+		},
+		{
+			"name": "Rough Peel Music",
+			"address": "173 Cuba St, Te Aro, Wellington 6011",
+			"lat": -41.2941094,
+			"lng": 174.7732089,
+			"phone": "(04) 803 3726",
+			"website": "https://www.roughpeel.co.nz"
+		}
+		]
 	}
 	]
 }

@@ -28,17 +28,12 @@ var AppView = Backbone.View.extend({
 				//console.log(data.regions);
 				
 				$.each(data.regions, function(i, region) {
-					console.log(region.name);
-					$('select').append('<option>'+region.name+'</option>');
-					// $.each(region, function(key, val) {
-					// 	//console.log(region[key]);
-					// 	$('select').append('<option>'+region[key]+'</option>');
-					// });
 					
-					// $.each(region.Auckland, function(i, store) {
-					// 	//console.log(store);
-					// 	that.addMarker(map, store.lat, store.lng, store.address, store.name, store.phone);
-					// });
+					$('select').append('<option>'+region.name+'</option>');
+					$.each(region.value, function(key, val) {
+						var store = region.value[key];
+						that.addMarker(map, store.lat, store.lng, store.address, store.name, store.phone);
+					});	
 				});
 			},
 			error: function(xhr, status, error) {
