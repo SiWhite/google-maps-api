@@ -1444,3 +1444,11 @@ td.visible-print,th.visible-print{display:table-cell!important}
 }
 #map{height:400px}
 body,html{height:100%;margin:0;padding:0}
+.nav-tabs{margin-bottom:5px}
+.intro{margin:25px 0}
+#physical form .form-group,ul#online-listings{margin-left:-15px}
+h2{margin-bottom:25px}
+#physical{position:relative}
+#physical form{position:absolute;width:200px;top:-70px;right:0}
+ul{list-style-type:none;margin:0;padding:0}
+ul#online-listings>li{border-bottom:1px solid #ddd;margin-bottom:10px;padding-bottom:10px}

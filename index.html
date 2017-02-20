@@ -10,13 +10,31 @@
 	<script src="bower_components/modernizr/modernizr.js"></script>
 </head>
 <body>
-	<h1>NZ Vinyl Directory</h1>
-	<div id="map"></div>
-	<form>
-		<select>
-			<option disabled value="">Select region</option>
-		</select>
-	</form>
+  <div class="container">
+  	<h1>NZ Vinyl Directory</h1>
+    <ul class="nav nav-tabs">
+      <li id="nav-tab--physical" class="active"><a href="#">Physical locations</a></li>
+      <li id="nav-tab--online"><a href="#">Online Traders</a></li>
+    </ul>
+    <div id="physical">
+    	<div id="map"></div>
+      <p class="intro">This map shows the locations of vinyl record sellers across New Zealand. Click on an icon on the map to view details about each location.
+        You can zoom and drag on the map to refine your view, or select a region from the menu below to focus on that area.</p>
+    	<form>
+        <div class="form-group">
+          <label for="region">Select a region:</label>
+      		<select class="form-control">
+            <option selected="selected" disabled>Select a region</option>
+      		</select>
+        </div>
+    	</form>
+    </div>
+    <div id="online" class="hidden">
+      <h2>Online Traders</h2>
+      <ul id="online-listings" class="col-xs-12 col-sm-6">
+      </ul>
+    </div>
+  </div>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="bower_components/jquery/dist/jquery.min.js"><\/script>')</script>
 	<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGcse28lYcou-lUbmnLGRFGaGbElgFsPw">
