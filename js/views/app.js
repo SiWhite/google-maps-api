@@ -108,7 +108,7 @@ var AppView = Backbone.View.extend({
             lng = region.lng;
             zoom = region.zoom;
           }
-          else if (changeRegion == 'Online Traders') {
+          else if (changeRegion == 'Online Traders' || changeRegion == 'All regions') {
             lat = -41.0155275;
             lng = 173.6358103;
             zoom = 5;
