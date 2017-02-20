@@ -29,7 +29,7 @@ a {
 
 h1 {
   &:before {
-    content: url(/images/icon.png);
+    content: url(../images/icon.png);
     margin-right: 5px;
   }
 }

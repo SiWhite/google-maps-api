@@ -1447,7 +1447,7 @@ header{margin-bottom:40px}
 a{color:#768B8C}
 .nav-tabs{margin-bottom:5px}
 .intro{margin:40px 0 20px}
-h1:before{content:url(/images/icon.png);margin-right:5px}
+h1:before{content:url(../images/icon.png);margin-right:5px}
 h2{margin-bottom:25px}
 #physical{position:relative}
 #physical form{position:absolute;width:200px;top:-69px;right:0}
