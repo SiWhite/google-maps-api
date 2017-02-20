@@ -29,7 +29,7 @@ var AppView = Backbone.View.extend({
 
 		$.ajax({
 			type: "GET",
-			url: "http://local.googlemaps.com/js/stores.json",
+			url: "http://vinyldirectory.nz/js/stores.json",
 			dataType: 'json',
 			success: function (data) {
 
@@ -98,7 +98,7 @@ var AppView = Backbone.View.extend({
     console.log('changeRegion = ',changeRegion);
     $.ajax({
 			type: "GET",
-			url: "http://local.googlemaps.com/js/stores.json",
+			url: "http://vinyldirectory.nz/js/stores.json",
 			dataType: 'json',
 			success: function (data) {
 
