@@ -265,8 +265,8 @@
 		{
 			"name": "Music Box Record Exchange",
 			"address": "346 Heretaunga St W, St Leonards, Hastings 4122",
-			"lat": -39.6393299,
-			"lng": 176.8381541,
+			"lat": -39.6393625,
+			"lng": 176.8380338,
 			"phone": "(06) 878 2479",
 			"website": ""
 		}
@@ -281,16 +281,16 @@
 		{
 			"name": "Goldie's Junk 'n Disorderly",
 			"address": "16 Main St, Foxton, New Zealand 4814",
-			"lat": -40.4720978,
-			"lng": 175.2792355,
+			"lat": -40.4721019,
+			"lng": 175.2792408,
 			"phone": "(06) 363 6950",
 			"website": "http://www.facebook.com/Goldies-Junk-n-Disorderly-172250802837727"
 		},
 		{
 			"name": "Rough Peel Music",
 			"address": "173 Cuba St, Te Aro, Wellington 6011",
-			"lat": -41.2941094,
-			"lng": 174.7732089,
+			"lat": -41.2940409,
+			"lng": 174.7754632,
 			"phone": "(04) 803 3726",
 			"website": "http://www.roughpeel.co.nz"
 		},
@@ -305,40 +305,40 @@
 		{
 			"name": "Death Ray Records",
 			"address": "6 Wilson St, Newtown, Wellington 6021",
-			"lat": -41.3125987,
-			"lng": 174.7804781,
+			"lat": -41.3128535,
+			"lng": 174.7792973,
 			"phone": "(04) 389 8014",
 			"website": "http://www.deathrayrecords.com/"
 		},
 		{
 			"name": "Lo-Cost Records",
 			"address": "147 Jackson St, Petone",
-			"lat": -41.2247111,
-			"lng": 174.8748301,
+			"lat": -41.2245901,
+			"lng": 174.8759324,
 			"phone": "(04) 939 2609",
 			"website": "http://www.moonhop.com/"
 		},
 		{
 			"name": "Wonderland Records",
 			"address": "2 Moore's Valley Road, Wainuiomata, 6008",
-			"lat": -41.272447,
-			"lng": 174.9520493,
+			"lat": -41.2723583,
+			"lng": 174.9531248,
 			"phone": "(04) 939 7581",
 			"website": "http://wonderland_recs.tripod.com/"
 		},
 		{
 			"name": "Mint Music",
 			"address": "258 High St, Lower Hutt 5010",
-			"lat": -41.2083229,
-			"lng": 174.903125,
+			"lat": -41.208214,
+			"lng": 174.9042273,
 			"phone": "(04) 566 2580",
 			"website": "http://mintmusic.co.nz"
 		},
 		{
 			"name": "Bizzare Attractions",
 			"address": "142 High Street N, Carterton, Wairarapa",
-			"lat": -41.0230198,
-			"lng": 175.5273905,
+			"lat": -41.0229025,
+			"lng": 175.5284982,
 			"phone": "",
 			"website": "http://www.myantiqueshops.co.nz/bizzare_attractions.html"
 		}
