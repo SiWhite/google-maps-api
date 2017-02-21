@@ -25,7 +25,7 @@ var config = {
     dest: 'js',
     options: {
       debug: false,
-      entries: 'js/main.js',
+      entries: ['js/main.js','js/markerclusterer.js'],
     },
     error: function(err) {
       gutil.log(gutil.colors.red('Browserify error:') + ' ' + err.message);
