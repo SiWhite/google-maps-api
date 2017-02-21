@@ -30,15 +30,15 @@ var AppView = Backbone.View.extend({
 		var promises = [];
 
 		$.ajax({
-			type: "GET",
-			//url: "http://local.googlemaps.com:8888/js/stores.json",
-			url: "http://vinyldirectory.nz/js/stores.json",
+			type: 'GET',
+			//url: 'http://local.googlemaps.com/js/stores.json',
+      url: 'http://vinyldirectory.nz/js/stores.json',
 			dataType: 'json',
 			success: function (data) {
 				$.each(data.regions, function(i, region) {
 					var dfd = $.Deferred();
-					$('select').append('<option value="'+region.name+'">'+region.name+'</option>');
 					if (region.name != 'Online Traders') {
+            $('select').append('<option value="'+region.name+'">'+region.name+'</option>');
 						$.each(region.value, function(key, val) {
 							var store = region.value[key];
 							that.addMarker(map, store.lat, store.lng, store.address, store.name, store.phone, store.website);
@@ -111,11 +111,14 @@ var AppView = Backbone.View.extend({
 		'</div>'+
 		'<h3>'+name+'</h3>'+
 		'<div id="bodyContent">'+
-		'<p><strong>Address:</strong> '+address+'</p>'+
-		'<p><strong>Phone:</strong> '+phone+'</p>'+
-		'<p><a target="_blank" href='+website+'>Visit Website</a></p>'+
-		'</div>'+
-		'</div>';
+		'<p id="address"><strong>Address:</strong> '+address+'</p>';
+    if (phone != 'N/A') {
+      contentString += '<p id="phone"><strong>Phone:</strong> '+phone+'</p>';
+    }
+    if (website != 'N/A') {
+      contentString += '<p><a target="_blank" href='+website+'>Visit Website</a></p>';
+    }
+    contentString += '</div></div>';
 		var marker = new google.maps.Marker({
 			map: resultsMap,
 			position: {lat: lat, lng: lng},
@@ -144,8 +147,8 @@ var AppView = Backbone.View.extend({
 	console.log('changeRegion = ',changeRegion);
 	$.ajax({
 			type: "GET",
-			//url: "http://local.googlemaps.com:8888/js/stores.json",
-			url: "http://vinyldirectory.nz/js/stores.json",
+			//url: "http://local.googlemaps.com/js/stores.json",
+      url: 'http://vinyldirectory.nz/js/stores.json',
 			dataType: 'json',
 			success: function (data) {
 
