@@ -13,6 +13,7 @@ var AppView = Backbone.View.extend({
 		this.infowindow = null;
 		this.map = null;
 		this.markers = new Array();
+    this.checkGeolocation();
 	},
 
 	initMap: function() {
@@ -25,14 +26,24 @@ var AppView = Backbone.View.extend({
 		this.getListings();
 	},
 
+  checkGeolocation: function() {
+    if ("geolocation" in navigator){ //check Geolocation available
+      navigator.geolocation.getCurrentPosition(function(position){
+            console.log("Found your location \nLat : "+position.coords.latitude+" \nLng :"+ position.coords.longitude);
+        });
+    } else {
+        console.log("Geolocation not available!");
+    }
+  },
+
 	getListings: function() {
 		var that = this;
 		var promises = [];
 
 		$.ajax({
 			type: 'GET',
-			//url: 'http://local.googlemaps.com/js/stores.json',
-      url: 'http://vinyldirectory.nz/js/stores.json',
+			url: 'https://local.googlemaps.com/js/stores.json',
+      //url: 'http://vinyldirectory.nz/js/stores.json',
 			dataType: 'json',
 			success: function (data) {
 				$.each(data.regions, function(i, region) {
@@ -147,8 +158,8 @@ var AppView = Backbone.View.extend({
 	console.log('changeRegion = ',changeRegion);
 	$.ajax({
 			type: "GET",
-			//url: "http://local.googlemaps.com/js/stores.json",
-      url: 'http://vinyldirectory.nz/js/stores.json',
+			url: "https://local.googlemaps.com/js/stores.json",
+      //url: 'http://vinyldirectory.nz/js/stores.json',
 			dataType: 'json',
 			success: function (data) {
 
