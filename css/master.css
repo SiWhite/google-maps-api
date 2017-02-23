@@ -1446,7 +1446,7 @@ body,html{height:100%;margin:0;padding:0;font-family:Lato,sans-serif}
 header{margin-bottom:40px}
 a{color:#768B8C}
 .nav-tabs{margin-bottom:5px}
-.intro{margin:40px 0 20px}
+.intro{margin:20px 0}
 h1:before{content:url(../images/icon.png);margin-right:5px}
 h2{margin-bottom:25px}
 #physical{position:relative}
@@ -1455,9 +1455,11 @@ h2{margin-bottom:25px}
 @media (max-width:620px){#physical form{position:static;width:auto;margin-top:20px}
 #physical form .form-group{margin-left:0}
 }
+#physical .content{margin-bottom:40px}
+#physical .advert a img{width:100%}
 ul{list-style-type:none;margin:0;padding:0}
 ul#online-listings{margin-left:-15px}
 ul#online-listings>li{border-bottom:1px solid #ddd;margin-bottom:10px;padding-bottom:10px}
-footer{color:#fff;background:#676F73;text-align:center;margin-top:100px;padding:20px 0 10px}
+footer{color:#fff;background:#676F73;text-align:center;margin-top:40px;padding:20px 0 10px}
 footer a{color:#fff;text-decoration:underline}
 footer a:hover{text-decoration:none;color:#fff}

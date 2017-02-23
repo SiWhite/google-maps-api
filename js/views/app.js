@@ -9,11 +9,14 @@ var AppView = Backbone.View.extend({
   },
 
 	initialize: function() {
-		this.initMap();
 		this.infowindow = null;
 		this.map = null;
 		this.markers = new Array();
-    this.checkGeolocation();
+    	this.userLat = null;
+    	this.userLng = null;
+    	this.initMap();
+    	this.checkGeolocation();
+    	_.bindAll(this,'getListings');
 	},
 
 	initMap: function() {
@@ -27,13 +30,32 @@ var AppView = Backbone.View.extend({
 	},
 
   checkGeolocation: function() {
+
     if ("geolocation" in navigator){ //check Geolocation available
-      navigator.geolocation.getCurrentPosition(function(position){
-            console.log("Found your location \nLat : "+position.coords.latitude+" \nLng :"+ position.coords.longitude);
-        });
+
+	    var options = {
+		  enableHighAccuracy: true,
+		  timeout: 15000,
+		  maximumAge: 0
+		};
+    	
+      navigator.geolocation.getCurrentPosition(this.geolocationSuccess, this.geolocationError, options)
     } else {
         console.log("Geolocation not available!");
     }
+  },
+
+  geolocationSuccess: function(position) {
+  	var that = this;
+  	console.log('here');
+  	var that = this;
+  	this.userLat = position.coords.latitude;
+    this.userLng = position.coords.longitude;
+   	// AppView.prototype.getListings();
+  },
+
+  geolocationError: function(err) {
+    console.log(err);
   },
 
 	getListings: function() {
@@ -42,14 +64,14 @@ var AppView = Backbone.View.extend({
 
 		$.ajax({
 			type: 'GET',
-			url: 'https://local.googlemaps.com/js/stores.json',
-      //url: 'http://vinyldirectory.nz/js/stores.json',
+			//url: 'https://local.googlemaps.com/js/stores.json',
+      		url: 'https://vinyldirectory.nz/js/stores.json',
 			dataType: 'json',
 			success: function (data) {
 				$.each(data.regions, function(i, region) {
 					var dfd = $.Deferred();
 					if (region.name != 'Online Traders') {
-            $('select').append('<option value="'+region.name+'">'+region.name+'</option>');
+            			$('select').append('<option value="'+region.name+'">'+region.name+'</option>');
 						$.each(region.value, function(key, val) {
 							var store = region.value[key];
 							that.addMarker(map, store.lat, store.lng, store.address, store.name, store.phone, store.website);
@@ -129,6 +151,10 @@ var AppView = Backbone.View.extend({
     if (website != 'N/A') {
       contentString += '<p><a target="_blank" href='+website+'>Visit Website</a></p>';
     }
+   console.log('this.userLat =', this.userLat);
+    if (this.userLat !== null) {
+      contentString += '<p><a target="_blank" href="http://maps.google.com/maps?saddr='+this.userLat+'&daddr='+this.userLng+'">Get Directions</a></p>';
+    }
     contentString += '</div></div>';
 		var marker = new google.maps.Marker({
 			map: resultsMap,
@@ -145,7 +171,6 @@ var AppView = Backbone.View.extend({
 			that.infowindow.open(resultsMap, marker);
 		});
 		this.markers.push(marker);
-		//console.log(this.markers);
 	},
 
   updateRegion: function(e) {
@@ -158,8 +183,8 @@ var AppView = Backbone.View.extend({
 	console.log('changeRegion = ',changeRegion);
 	$.ajax({
 			type: "GET",
-			url: "https://local.googlemaps.com/js/stores.json",
-      //url: 'http://vinyldirectory.nz/js/stores.json',
+			//url: "https://local.googlemaps.com/js/stores.json",
+      		url: 'https://vinyldirectory.nz/js/stores.json',
 			dataType: 'json',
 			success: function (data) {
 
