@@ -4,8 +4,7 @@ var AppView = Backbone.View.extend({
   el: 'body',
 
    events: {
-	 "change select": "updateRegion",
-	 "click .nav > li > a": "updateTabs"
+	 "change select": "updateRegion"
   },
 
 	initialize: function() {
@@ -14,7 +13,7 @@ var AppView = Backbone.View.extend({
 		this.markers = new Array();
     	this.userLat = null;
     	this.userLng = null;
-    	if ( $('#home').length > 0 ) {
+    	if ( $('#physical-traders').length > 0 ) {
 	    	this.initMap();
 	    	this.checkGeolocation();
 	    	_.bindAll(this,'getListings');
@@ -40,7 +39,7 @@ var AppView = Backbone.View.extend({
 		  timeout: 15000,
 		  maximumAge: 0
 		};
-    	
+
       navigator.geolocation.getCurrentPosition(this.geolocationSuccess, this.geolocationError, options)
     } else {
         console.log("Geolocation not available!");
@@ -66,30 +65,19 @@ var AppView = Backbone.View.extend({
 
 		$.ajax({
 			type: 'GET',
-			url: 'http://local.silverstripe.com:8888/themes/vinyldir/js/stores.json',
+			url: 'http://local.vinyldir.com//themes/vinyldir/js/stores.json',
       		//url: 'https://vinyldirectory.nz/js/stores.json',
 			dataType: 'json',
 			success: function (data) {
 				$.each(data.regions, function(i, region) {
 					var dfd = $.Deferred();
-					if (region.name != 'Online Traders') {
-            			$('select').append('<option value="'+region.name+'">'+region.name+'</option>');
+      			$('select').append('<option value="'+region.name+'">'+region.name+'</option>');
 						$.each(region.value, function(key, val) {
 							var store = region.value[key];
 							that.addMarker(map, store.lat, store.lng, store.address, store.name, store.phone, store.website);
 						});
 						dfd.resolve();
-					} else if (region.name == 'Online Traders') {
-						$.each(region.value, function(key, val) {
-							var store = region.value[key];
-							var storeItem = '<li><ul>'+
-							'<li>'+store.name+'</li>'+
-							'<li><a href="'+store.website+'" target="_blank">Visit website</a></li></ul></li>';
-							$(storeItem).appendTo('#online-listings');
-							dfd.resolve();
-						});
-					}
-				promises.push(dfd);
+				    promises.push(dfd);
 				});
 
 				$.when.apply($, promises).then(function () {
@@ -185,18 +173,18 @@ var AppView = Backbone.View.extend({
 	console.log('changeRegion = ',changeRegion);
 	$.ajax({
 			type: "GET",
-			url: "http://local.silverstripe.com:8888/themes/vinyldir/js/stores.json",
+			url: "http://local.vinyldir.com/themes/vinyldir/js/stores.json",
       		//url: 'https://vinyldirectory.nz/js/stores.json',
 			dataType: 'json',
 			success: function (data) {
 
 				$.each(data.regions, function(i, region) {
-					if (changeRegion == region.name && changeRegion != 'Online Traders') {
+					if (changeRegion == region.name) {
 						lat = region.lat;
 						lng = region.lng;
 						zoom = region.zoom;
 					}
-					else if (changeRegion == 'Online Traders' || changeRegion == 'All regions') {
+					else if (changeRegion == 'All regions') {
 						lat = -41.0155275;
 						lng = 173.6358103;
 						zoom = 5;
@@ -215,20 +203,6 @@ var AppView = Backbone.View.extend({
 			}
 		});
   },
-  updateTabs: function(e) {
-	if ( !$(e.currentTarget).parent().hasClass('active') ) {
-	  $('.nav').find('.active').removeClass('active');
-	  $(e.currentTarget).parent().addClass('active');
-	}
-
-	if ( $('.nav .active').attr('id') == 'nav-tab--physical' ) {
-	  $('#online').addClass('hidden');
-	  $('#physical').removeClass('hidden');
-	} else {
-	  $('#physical').addClass('hidden');
-	  $('#online').removeClass('hidden');
-	}
-  }
 });
 
 module.exports = AppView;

@@ -471,39 +471,6 @@
 			"website": "http://www.myantiqueshops.co.nz/trash_converters.html"
 		}
 		]
-	},
-	{
-		"name": "Online Traders",
-		"value": [
-		{
-			"name": "Noise Worth Hearing",
-			"website": "http://www.facebook.com/NOISEworthhearing/"
-		},
-		{
-			"name": "Lingering Sound",
-			"website": "http://www.facebook.com/lingeringsound/"
-		},
-		{
-			"name": "Intamusic",
-			"website": "http://www.intamusic.co.nz"
-		},
-		{
-			"name": "Rockstuff",
-			"website": "http://www.rockstuff.co.nz"
-		},
-		{
-			"name": "Rezound Records",
-			"website": "http://www.rezoundrekordz.com/"
-		},
-		{
-			"name": "Monkey Killer Records",
-			"website": "http://monkeykillerrecords.com"
-		},
-    {
-			"name": "Black Circle Records",
-			"website": "http://blackcircle.nz"
-		}
-		]
 	}
 	]
 }

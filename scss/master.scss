@@ -21,6 +21,26 @@ a {
 
 .nav-tabs {
   margin-bottom: 5px;
+	> li > a {
+		cursor: pointer !important;
+	}
+}
+
+.nav > li > a.current {
+  border-color: #eee #eee #ddd !important;
+  text-decoration: none !important;
+  background-color: #eee !important;
+}
+
+.nav > li > a {
+  &:hover {
+    text-decoration: none;
+    background-color: #eee;
+  }
+   &.current {
+     text-decoration: none;
+     background-color: #eee;
+   }
 }
 
 .intro {
@@ -64,9 +84,9 @@ h2 {
   }
 
   .advert a img {
-   
+
       width: 100%;
-    
+
   }
 }
 
