@@ -14,9 +14,11 @@ var AppView = Backbone.View.extend({
 		this.markers = new Array();
     	this.userLat = null;
     	this.userLng = null;
-    	this.initMap();
-    	this.checkGeolocation();
-    	_.bindAll(this,'getListings');
+    	if ( $('#home').length > 0 ) {
+	    	this.initMap();
+	    	this.checkGeolocation();
+	    	_.bindAll(this,'getListings');
+	    }
 	},
 
 	initMap: function() {
@@ -64,8 +66,8 @@ var AppView = Backbone.View.extend({
 
 		$.ajax({
 			type: 'GET',
-			//url: 'https://local.googlemaps.com/js/stores.json',
-      		url: 'https://vinyldirectory.nz/js/stores.json',
+			url: 'http://local.silverstripe.com:8888/themes/vinyldir/js/stores.json',
+      		//url: 'https://vinyldirectory.nz/js/stores.json',
 			dataType: 'json',
 			success: function (data) {
 				$.each(data.regions, function(i, region) {
@@ -94,31 +96,31 @@ var AppView = Backbone.View.extend({
 					var clusterStyles = [
 						{
 							textColor: 'white',
-							url: 'images/cluster1.png',
+							url: 'themes/vinyldir/images/cluster1.png',
     						height: 52,
     						width: 53
 						},
 						{
 							textColor: 'white',
-							url: 'images/cluster2.png',
+							url: 'themes/vinyldir/images/cluster2.png',
     						height: 52,
     						width: 53
 						},
 						{
 							textColor: 'white',
-							url: 'images/cluster3.png',
+							url: 'themes/vinyldir/images/cluster3.png',
     						height: 52,
     						width: 53
 						},
 						{
 							textColor: 'white',
-							url: 'images/cluster4.png',
+							url: 'themes/vinyldir/images/cluster4.png',
     						height: 52,
     						width: 53
 						},
 						{
 							textColor: 'white',
-							url: 'images/cluster5.png',
+							url: 'themes/vinyldir/images/cluster5.png',
     						height: 52,
     						width: 53
 						}
@@ -138,7 +140,7 @@ var AppView = Backbone.View.extend({
 	addMarker: function(resultsMap, lat, lng, address, name, phone, website) {
 		var that = this;
 		var key = 'AIzaSyAGcse28lYcou-lUbmnLGRFGaGbElgFsPw';
-		var iconBase = 'images/';
+		var iconBase = 'themes/vinyldir/images/';
 		var contentString = '<div id="content">'+
 		'<div id="siteNotice">'+
 		'</div>'+
@@ -183,8 +185,8 @@ var AppView = Backbone.View.extend({
 	console.log('changeRegion = ',changeRegion);
 	$.ajax({
 			type: "GET",
-			//url: "https://local.googlemaps.com/js/stores.json",
-      		url: 'https://vinyldirectory.nz/js/stores.json',
+			url: "http://local.silverstripe.com:8888/themes/vinyldir/js/stores.json",
+      		//url: 'https://vinyldirectory.nz/js/stores.json',
 			dataType: 'json',
 			success: function (data) {
 
