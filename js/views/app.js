@@ -13,7 +13,7 @@ var AppView = Backbone.View.extend({
 		this.markers = new Array();
     	this.userLat = null;
     	this.userLng = null;
-    	if ( $('#physical-traders').length > 0 ) {
+    	if ( $('#map').length > 0 ) {
 	    	this.initMap();
 	    	this.checkGeolocation();
 	    	_.bindAll(this,'getListings');
