@@ -65,8 +65,8 @@ var AppView = Backbone.View.extend({
 
 		$.ajax({
 			type: 'GET',
-			url: 'http://local.vinyldir.com//themes/vinyldir/js/stores.json',
-      		//url: 'https://vinyldirectory.nz/js/stores.json',
+			//url: 'http://local.vinyldir.com//themes/vinyldir/js/stores.json',
+      		url: 'https://vinyldirectory.nz/themes/vinyldir/js/stores.json',
 			dataType: 'json',
 			success: function (data) {
 				$.each(data.regions, function(i, region) {
@@ -173,9 +173,8 @@ var AppView = Backbone.View.extend({
 	console.log('changeRegion = ',changeRegion);
 	$.ajax({
 			type: "GET",
-			url: "http://local.vinyldir.com/themes/vinyldir/js/stores.json",
-      		//url: 'https://vinyldirectory.nz/js/stores.json',
-			dataType: 'json',
+			//url: "http://local.vinyldir.com/themes/vinyldir/js/stores.json",
+      		url: 'https://vinyldirectory.nz/themes/vinyldir/js/stores.json',
 			success: function (data) {
 
 				$.each(data.regions, function(i, region) {
